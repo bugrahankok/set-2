@@ -1,0 +1,20 @@
+# Gradle files
+.gradle/
+build/
+app/build/
+
+# Android Studio local configuration
+local.properties
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/nav/
+.idea/assetWizardSettings.xml
+.idea/runConfigurations/
+*.iml
+.DS_Store
+
+# Built APKs
+*.apk
+*.aar

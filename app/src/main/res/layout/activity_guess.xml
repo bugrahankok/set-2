@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/background"
+    android:gravity="center_horizontal">
+
+    <!-- Screen Title -->
+    <TextView
+        android:id="@+id/tv_guess_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_guess"
+        android:textColor="@color/accent_indigo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Game Description/Rule -->
+    <TextView
+        android:id="@+id/tv_guess_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guess a number between 1 and 10. You must guess correctly on exactly the 2nd attempt to win!"
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Current Attempt Count -->
+    <TextView
+        android:id="@+id/tv_attempt_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Attempt: 1"
+        android:textColor="@color/accent_blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Input for Guess -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_guess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your guess (1-10)"
+            android:inputType="number"
+            android:textColor="@color/text_primary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Guess Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_guess"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Guess"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"
+        style="@style/Widget.MaterialComponents.Button" />
+
+    <!-- Feedback Message Card -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="20dp"
+        android:layout_marginBottom="24dp">
+ 
+         <TextView
+             android:id="@+id/tv_guess_feedback"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Good luck!"
+             android:textColor="@color/text_primary"
+             android:textSize="18sp"
+             android:layout_gravity="center"
+             android:gravity="center" />
+     </FrameLayout>
+
+    <!-- Back Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Back"
+        android:textSize="18sp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+</LinearLayout>

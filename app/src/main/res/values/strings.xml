@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lab Assignment App</string>
+    <string name="title_hello">Hello World</string>
+    <string name="title_introduce">Introduce Yourself</string>
+    <string name="title_guess">Guessing Game</string>
+    
+    <string name="menu_title">Lab Assignment</string>
+    <string name="menu_subtitle">Choose one of the programs below</string>
+    
+    <string name="btn_hello">1. Hello World</string>
+    <string name="btn_introduce">2. Introduce Yourself</string>
+    <string name="btn_guess">3. Guessing Game</string>
+    <string name="btn_lamp">4. Lamp &amp; Bulb Test</string>
+</resources>
